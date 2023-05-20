@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-principal: #675D50;
+    --cor-secundaria: #F3DEBA;
+    --cor-terciaria: #ABC4AA;
+    --cor-hover: #A9907E;
+}
+
+*{margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-principal);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+ 
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;   
+
+}
+
+.cabecalho__menu__links {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.pagina__principal {
+    display: flex;
+    padding: 5% 15%;
+    align-items: center;  
+    gap: 89px; 
+    justify-content: space-between;
+   
+}
+
+.pagina__principal__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+     
+}
+
+.pagina__principal__titulo {
+    color: var(--cor-secundaria);
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.25rem;
+}
+
+.pagina__principal__titulo__destaque {
+    color: var(--cor-terciaria);
+}
+
+.pagina__principal__paragrafo {
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.pagina__principal__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+       
+}
+
+.pagina__principal__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.pagina__principal__links__link {
+
+    display: flex;    
+    text-decoration: none;
+    gap: 16px;
+    width: 50%;
+    justify-content: center;
+    background-color: var(--cor-principal);
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    padding: 21.5px 0;
+    font-family: 'Montserrat', sans-serif';
+}
+
+.pagina__principal__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape {
+    text-align: center;
+    padding: 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;   
+}
+
+@media (max-width:1200px) {
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .pagina__principal {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .pagina__principal__conteudo {
+        width: auto;
+    }
+}
